@@ -1,22 +1,21 @@
 package Basic;
 
 public class dataTypeSize {
-    
-    public static int main(String args[]){
+
+    public static int main(String args[]) {
 
         String str = "Character";
-            switch(str){
-                case "Character":
+        switch (str) {
+            case "Character":
                 return 2;
-                case "Integer":
+            case "Integer":
                 return 4;
-                case "Long":
+            case "Long":
                 return 8;
-                case "Float":
+            case "Float":
                 return 4;
-                default:
+            default:
                 return 8;
-            }
-    }
+        }
     }
 }
