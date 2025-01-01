@@ -1,8 +1,10 @@
-class code {
+package Patterns;
+
+public class Pattern20 {
 
     public static void main(String args[]) {
 
-        int n = 3;
+        int n = 4;
 
         for (int i = 0; i < 2 * n; i++) {
 
