@@ -1,5 +1,6 @@
-class code {
+package Patterns;
 
+public class Pattern22 {
     public static void main(String args[]) {
 
         int n = 3;
@@ -27,5 +28,4 @@ class code {
         }
 
     }
-
 }
