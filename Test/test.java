@@ -1,17 +1,38 @@
 package Test;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class test {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter your age");
-        int age = sc.nextInt();
-        if (age > 18) {
-            System.out.println("You are allowed to enter this site");
-        } else {
-            System.out.println("You are not allowed to enter this site");
+
+        TreeMap<Integer, Integer> treeMap = new TreeMap<>();
+
+        int arr[] = { 2, 0, 2, 1, 1, 0, 0, 1, 1 };
+
+        for (int i = 0; i < arr.length; i++) {
+            if (treeMap.containsKey(arr[i])) {
+                int count = treeMap.get(arr[i]);
+                treeMap.put(arr[i], ++count);
+            } else {
+                treeMap.put(arr[i], 1);
+            }
         }
+
+        System.out.println(treeMap);
+
+        for (int i = 0; i < treeMap.get(0); i++) {
+            arr[i] = 0;
+            System.out.print(arr[i] + " ");
+        }
+        for (int i = treeMap.get(0); i < treeMap.get(0) + treeMap.get(1); i++) {
+            arr[i] = 1;
+            System.out.print(arr[i] + " ");
+        }
+        for (int i = treeMap.get(0) + treeMap.get(1); i < treeMap.get(0) + treeMap.get(1) + treeMap.get(2); i++) {
+            arr[i] = 2;
+            System.out.print(arr[i] + " ");
+        }
+
     }
 }
 
