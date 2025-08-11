@@ -11,7 +11,7 @@ public class mergeSort {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
-`
+
     }
 
     public static int[] mergeSort(int arr[], int low, int high) {
