@@ -6,6 +6,7 @@ public class arrayList {
 
     public static void main(String args[]) {
 
+        // List<Integer> list = new LinkedList<>();
         ArrayList<Integer> list = new ArrayList<>();
 
         list.add(10);
