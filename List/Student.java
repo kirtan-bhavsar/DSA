@@ -40,9 +40,8 @@ public class Student implements Comparable<Student> {
     }
 
     @Override
-    public int compareTo(Student that) {
-        System.out.println(this.rollNo - that.rollNo);
-        return this.rollNo - that.rollNo;
+    public int compareTo(Student o) {
+        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
     }
 
 }
