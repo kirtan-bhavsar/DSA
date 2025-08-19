@@ -7,20 +7,33 @@ public class hashcodeAndEquals {
 
     public static void main(String args[]) {
 
-        Set<Student> set = new HashSet<>();
+        List<Student> list = new ArrayList<>();
 
-        set.add(new Student("Kirtan", 2));
-        set.add(new Student("Shivani", 4));
-        set.add(new Student("Kunj", 5));
-        set.add(new Student("Nishil", 6));
-        set.add(new Student("Parth", 6));
+        // List<Integer> arrayList = new ArrayList<>();
 
-        Student s1 = new Student("Mayur", 31);
-        Student s2 = new Student("Deep", 31);
+        // arrayList.add(111);
+        // arrayList.add(2);
+        // arrayList.add(33);
 
-        System.out.println(s1.equals(s2));
+        // Collections.sort(arrayList);
 
-        System.out.println(set);
+        list.add(new Student("Kirtan", 2, 87));
+        list.add(new Student("Shivani", 4, 93));
+        list.add(new Student("Kunj", 5, 88));
+        list.add(new Student("Nishil", 6, 65));
+        list.add(new Student("Parth", 6, 30));
+        list.add(new Student("Shyam", 3, 75));
+
+        Student s1 = new Student("Mayur", 33, 65);
+        Student s2 = new Student("Deep", 32, 69);
+
+        System.out.println(s1.compareTo(s2));
+
+        System.out.println(list);
+
+        Collections.sort(list, (o1, o2) -> o2.marks - o1.marks);
+
+        System.out.println(list);
 
     }
 

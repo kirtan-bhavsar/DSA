@@ -1,1 +1,4 @@
 Reversing an array through recursion
+Sorting : 
+Selection Sort
+Bubble Sort

@@ -2,13 +2,15 @@ package List;
 
 public class Student implements Comparable<Student> {
 
-    String name;
-    int rollNo;
+    public String name;
+    public int rollNo;
+    public int marks;
 
-    public Student(String name, int rollNo) {
+    public Student(String name, int rollNo, int marks) {
 
         this.name = name;
         this.rollNo = rollNo;
+        this.marks = marks;
 
     }
 
@@ -40,8 +42,8 @@ public class Student implements Comparable<Student> {
     }
 
     @Override
-    public int compareTo(Student o) {
-        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+    public int compareTo(Student that) {
+        return this.rollNo - that.rollNo;
     }
 
 }
