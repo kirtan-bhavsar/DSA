@@ -16,3 +16,6 @@ Check if array is sorted
 
 Dt:21082025:
 Koko Eating bananas
+binary search
+find element insert position
+find the first and last occurance in an array
