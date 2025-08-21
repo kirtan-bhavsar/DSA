@@ -5,3 +5,14 @@ Selection Sort
 Bubble Sort
 204 vid
 insertion sort
+
+Dt:20082025:
+Recursive Bubble Sort
+Recursive Insertion Sort
+Time Complexity
+Largest element in an array
+Second largest element in an array
+Check if array is sorted
+
+Dt:21082025:
+Koko Eating bananas
