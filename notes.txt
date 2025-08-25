@@ -19,3 +19,6 @@ Koko Eating bananas
 binary search
 find element insert position
 find the first and last occurance in an array
+
+Dt: 22/23/24082025:
+Easy of Arrays
