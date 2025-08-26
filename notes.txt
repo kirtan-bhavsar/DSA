@@ -20,8 +20,9 @@ binary search
 find element insert position
 find the first and last occurance in an array
 
-Dt: 22/23/24082025:
+Dt: 22/23/24/25082025:
 Easy of Arrays
 
-Dt:25082025:
+Dt:26082025:
 Longest subarray with sum K (with only positive elements)
+move zeroes to the end
