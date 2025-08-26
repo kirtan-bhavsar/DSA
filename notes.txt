@@ -26,3 +26,4 @@ Easy of Arrays
 Dt:26082025:
 Longest subarray with sum K (with only positive elements)
 move zeroes to the end
+union of two Arrays
