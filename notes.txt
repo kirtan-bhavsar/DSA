@@ -27,3 +27,9 @@ Dt:26082025:
 Longest subarray with sum K (with only positive elements)
 move zeroes to the end
 union of two Arrays
+
+Dt:27082025:
+Remove duplicates from the array
+
+Dt:29082025:
+Implement lower bound, using binary search
