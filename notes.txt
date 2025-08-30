@@ -36,3 +36,5 @@ Implement lower bound, using binary search
 
 Dt:30082025:
 Implement upper bound, using binary search
+Implement ceil Of An Array
+Implement floor of An Array
