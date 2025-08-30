@@ -33,3 +33,6 @@ Remove duplicates from the array
 
 Dt:29082025:
 Implement lower bound, using binary search
+
+Dt:30082025:
+Implement upper bound, using binary search
