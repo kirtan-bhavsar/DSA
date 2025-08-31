@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "binarySearchInRotatedArray",
+            "request": "launch",
+            "mainClass": "BinarySearch.binarySearchInRotatedArray",
+            "projectName": "DSA_6d406212"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
