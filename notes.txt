@@ -39,3 +39,6 @@ Implement upper bound, using binary search
 Implement ceil Of An Array
 Implement floor of An Array
 Number of Occurances in a sorted array
+
+Dt:02092025
+Single element in a sorted array
