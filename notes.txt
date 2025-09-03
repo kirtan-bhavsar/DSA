@@ -42,3 +42,8 @@ Number of Occurances in a sorted array
 
 Dt:02092025
 Single element in a sorted array
+Number of times an array was rotated
+Min in the sorted array
+
+Dt:03092025
+Peak element in an array
