@@ -47,3 +47,7 @@ Min in the sorted array
 
 Dt:03092025
 Peak element in an array
+
+Dt:04092025
+M Bouquets with k flowers
+
