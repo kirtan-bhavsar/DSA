@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "shipWithKOrders",
+            "request": "launch",
+            "mainClass": "BinarySearch.shipWithKOrders",
+            "projectName": "DSA_6d406212"
+        },
+        {
+            "type": "java",
             "name": "binarySearchInRotatedArray",
             "request": "launch",
             "mainClass": "BinarySearch.binarySearchInRotatedArray",

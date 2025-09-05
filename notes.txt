@@ -51,3 +51,5 @@ Peak element in an array
 Dt:04092025
 M Bouquets with k flowers
 
+Dt:05092025
+ship with Min weight capacity
