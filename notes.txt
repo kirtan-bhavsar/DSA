@@ -53,3 +53,11 @@ M Bouquets with k flowers
 
 Dt:05092025
 ship with Min weight capacity
+
+Dt:06092025
+Aggressive cows
+
+Dt:07092025
+student with min possible max pages
+Painter's partition
+min max distance between gas stations
