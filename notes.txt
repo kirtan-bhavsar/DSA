@@ -61,3 +61,6 @@ Dt:07092025
 student with min possible max pages
 Painter's partition
 min max distance between gas stations
+
+Dt:08092025
+Remove outer parantheses
