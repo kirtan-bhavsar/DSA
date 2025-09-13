@@ -64,3 +64,6 @@ min max distance between gas stations
 
 Dt:08092025
 Remove outer parantheses
+
+Dt:13092025
+reverse the words in a string
