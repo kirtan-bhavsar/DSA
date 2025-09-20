@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Runner",
+            "request": "launch",
+            "mainClass": "LinkedList.Runner",
+            "projectName": "DSA_6d406212"
+        },
+        {
+            "type": "java",
             "name": "Anagram",
             "request": "launch",
             "mainClass": "Strings.Anagram",
