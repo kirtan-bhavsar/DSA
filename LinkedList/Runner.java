@@ -18,6 +18,7 @@ public class Runner {
         list.add(7);
         list.add(7);
         list.add(7);
+        list.add(8);
 
         // list.show();
         System.out.println(list.lengthOfLinkedList() + " is the length of the linked list");
@@ -31,7 +32,8 @@ public class Runner {
         // list.deleteSingleOccurance(1);
         // list.insertAtHead(1010);
         // list.insertAtTail(1010);
-        list.insertAtPosition(1010, 13, list.lengthOfLinkedList());
+        // list.insertAtPosition(1010, 13, list.lengthOfLinkedList());
+        list.insertBeforeValue(1010, 1000, list.lengthOfLinkedList());
         list.show();
 
     }

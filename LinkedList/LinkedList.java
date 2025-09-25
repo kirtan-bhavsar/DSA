@@ -238,4 +238,31 @@ public class LinkedList {
 
     }
 
+    public void insertBeforeValue(int data, int value, int length) {
+
+        Node temp = head;
+        Node prevTemp = null;
+        int counter = 1;
+
+        Node newNode = new Node();
+        newNode.data = data;
+
+        while (counter <= length) {
+            if (temp.data == value) {
+                if (prevTemp == null) {
+                    newNode.next = head;
+                    head = newNode;
+                    return;
+                }
+                prevTemp.next = newNode;
+                newNode.next = temp;
+                return;
+            }
+            counter += 1;
+            prevTemp = temp;
+            temp = temp.next;
+        }
+
+    }
+
 }
