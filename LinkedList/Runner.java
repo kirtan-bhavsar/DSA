@@ -28,7 +28,10 @@ public class Runner {
         // list.show();
         list.show();
         // list.deleteAllOccurances(2);
-        list.deleteSingleOccurance(1);
+        // list.deleteSingleOccurance(1);
+        // list.insertAtHead(1010);
+        // list.insertAtTail(1010);
+        list.insertAtPosition(1010, 13, list.lengthOfLinkedList());
         list.show();
 
     }

@@ -170,4 +170,72 @@ public class LinkedList {
         return 0;
     }
 
+    public void insertAtHead(int data) {
+
+        Node newNode = new Node();
+
+        newNode.data = data;
+
+        newNode.next = head;
+
+        head = newNode;
+
+    }
+
+    public void insertAtTail(int data) {
+
+        Node newNode = new Node();
+
+        newNode.data = data;
+
+        Node temp = head;
+
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+
+        temp.next = newNode;
+
+    }
+
+    public void insertAtPosition(int data, int position, int length) {
+
+        if (position < 1 || position > length + 1) {
+            return;
+        }
+
+        if (position == 1) {
+            insertAtHead(data);
+            return;
+        }
+
+        if (position == length + 1) {
+            insertAtTail(data);
+            return;
+        }
+
+        Node newNode = new Node();
+
+        newNode.data = data;
+
+        Node prevTemp = head;
+        Node temp = head.next;
+
+        int counter = 2;
+
+        while (counter <= position) {
+
+            if (counter == position) {
+                prevTemp.next = newNode;
+                newNode.next = temp;
+            }
+
+            counter += 1;
+            prevTemp = temp;
+            temp = temp.next;
+
+        }
+
+    }
+
 }
