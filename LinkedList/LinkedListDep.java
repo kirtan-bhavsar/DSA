@@ -1,9 +1,9 @@
 package LinkedList;
 
-public class LinkedList {
+public class LinkedListDep {
 
-    Node head;
-    Node tail;
+    NodeDep head;
+    NodeDep tail;
 
     public void deletePosition(int length, int position) {
 
@@ -13,9 +13,9 @@ public class LinkedList {
             head = head.next;
             return;
         }
-        Node temp = head;
+        NodeDep temp = head;
         int currentPosition = 1;
-        Node prevTemp = null;
+        NodeDep prevTemp = null;
 
         while (currentPosition != position) {
 
@@ -32,8 +32,8 @@ public class LinkedList {
 
     public void deleteAllOccurances(int data) {
 
-        Node temp = head;
-        Node prevTemp = null;
+        NodeDep temp = head;
+        NodeDep prevTemp = null;
 
         while (temp.next != null) {
 
@@ -69,8 +69,8 @@ public class LinkedList {
 
     public void deleteSingleOccurance(int data) {
 
-        Node temp = head;
-        Node prevTemp = null;
+        NodeDep temp = head;
+        NodeDep prevTemp = null;
 
         while (temp.next != null) {
 
@@ -106,7 +106,7 @@ public class LinkedList {
 
     public int lengthOfLinkedList() {
 
-        Node temp = head;
+        NodeDep temp = head;
         int counter = 1;
 
         while (temp.next != null) {
@@ -120,7 +120,7 @@ public class LinkedList {
 
     public void add(int data) {
 
-        Node node = new Node();
+        NodeDep node = new NodeDep();
 
         node.data = data;
         node.next = null;
@@ -128,7 +128,7 @@ public class LinkedList {
         if (head == null) {
             head = node;
         } else {
-            Node current = head;
+            NodeDep current = head;
             while (current.next != null) {
                 current = current.next;
             }
@@ -139,7 +139,7 @@ public class LinkedList {
 
     public void show() {
 
-        Node current = head;
+        NodeDep current = head;
         if (current == null) {
             System.out.println("There are no elements in linkedlist to show");
             return;
@@ -156,7 +156,7 @@ public class LinkedList {
 
     public int searchData(int data) {
 
-        Node temp = head;
+        NodeDep temp = head;
 
         while (temp.next != null) {
             if (temp.data == data)
@@ -172,7 +172,7 @@ public class LinkedList {
 
     public void insertAtHead(int data) {
 
-        Node newNode = new Node();
+        NodeDep newNode = new NodeDep();
 
         newNode.data = data;
 
@@ -184,11 +184,11 @@ public class LinkedList {
 
     public void insertAtTail(int data) {
 
-        Node newNode = new Node();
+        NodeDep newNode = new NodeDep();
 
         newNode.data = data;
 
-        Node temp = head;
+        NodeDep temp = head;
 
         while (temp.next != null) {
             temp = temp.next;
@@ -214,12 +214,12 @@ public class LinkedList {
             return;
         }
 
-        Node newNode = new Node();
+        NodeDep newNode = new NodeDep();
 
         newNode.data = data;
 
-        Node prevTemp = head;
-        Node temp = head.next;
+        NodeDep prevTemp = head;
+        NodeDep temp = head.next;
 
         int counter = 2;
 
@@ -240,11 +240,11 @@ public class LinkedList {
 
     public void insertBeforeValue(int data, int value, int length) {
 
-        Node temp = head;
-        Node prevTemp = null;
+        NodeDep temp = head;
+        NodeDep prevTemp = null;
         int counter = 1;
 
-        Node newNode = new Node();
+        NodeDep newNode = new NodeDep();
         newNode.data = data;
 
         while (counter <= length) {

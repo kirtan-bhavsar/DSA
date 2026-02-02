@@ -1,10 +1,12 @@
 package LinkedList;
 
-public class Runner {
+public class RunnerDep {
 
     public static void main(String args[]) {
 
-        LinkedList list = new LinkedList();
+        LinkedListDep list = new LinkedListDep();
+
+        System.out.println("length before any element is inserted" + list.lengthOfLinkedList());
 
         list.add(1);
         list.add(1);
@@ -19,6 +21,7 @@ public class Runner {
         list.add(7);
         list.add(7);
         list.add(8);
+        // list.insertAtHead(1010);
 
         // list.show();
         System.out.println(list.lengthOfLinkedList() + " is the length of the linked list");
@@ -30,7 +33,7 @@ public class Runner {
         list.show();
         // list.deleteAllOccurances(2);
         // list.deleteSingleOccurance(1);
-        // list.insertAtHead(1010);
+        // list.insertAtHead(1010);s
         // list.insertAtTail(1010);
         // list.insertAtPosition(1010, 13, list.lengthOfLinkedList());
         list.insertBeforeValue(1010, 1000, list.lengthOfLinkedList());
