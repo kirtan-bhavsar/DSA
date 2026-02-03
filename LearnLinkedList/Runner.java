@@ -120,12 +120,12 @@ public class Runner {
         // list.show();
 
         // Test Case 8
-        list.add(10);
-        list.add(20);
-        list.add(30);
-        list.show();
-        list.insertAtPosition(99, 4);
-        list.show();
+        // list.add(10);
+        // list.add(20);
+        // list.add(30);
+        // list.show();
+        // list.insertAtPosition(99, 4);
+        // list.show();
 
         // Test Case 9
         // list.add(10);
@@ -156,6 +156,19 @@ public class Runner {
         // list.show();
         // list.insertAtPosition(99, 0);
         // list.show();
+
+        // list.show();
+        // list.insertAtPosition(10, 1);
+        // list.show();
+
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(40);
+        list.add(50);
+        list.show();
+        list.deleteAtPosition(5);
+        list.show();
 
     }
 

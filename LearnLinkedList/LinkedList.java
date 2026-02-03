@@ -157,60 +157,138 @@ public class LinkedList {
 
     }
 
+    // brute force insert at position
+    // public void insertAtPosition(int data, int position) {
+
+    // Node temp = head;
+    // int counter = 1;
+    // Node newNode = new Node();
+
+    // if (head == null) {
+    // if (position > 1) {
+    // return;
+    // } else {
+    // head = new Node();
+    // head.data = data;
+    // head.next = null;
+    // return;
+    // }
+    // }
+
+    // if (head.next == null) {
+    // if (position >= 3)
+    // return;
+    // else {
+    // if (position == 1) {
+    // newNode.data = data;
+    // newNode.next = temp;
+    // head = newNode;
+    // return;
+    // }
+    // if (position == 2) {
+    // newNode.data = data;
+    // newNode.next = null;
+    // head.next = newNode;
+    // return;
+    // }
+    // }
+    // }
+
+    // if (position == 1) {
+    // newNode.data = data;
+    // newNode.next = head;
+    // head = newNode;
+    // return;
+    // } else {
+    // Node prevTemp = head;
+    // while (prevTemp.next != null) {
+    // prevTemp = temp;
+    // temp = temp.next;
+    // counter += 1;
+    // if (position == counter) {
+    // newNode.data = data;
+    // prevTemp.next = newNode;
+    // newNode.next = temp;
+    // return;
+    // }
+    // }
+    // }
+
+    // }
+
+    // Insert at position optimal
     public void insertAtPosition(int data, int position) {
 
-        Node temp = head;
-        int counter = 1;
-        Node newNode = new Node();
-
+        // Handling empty
         if (head == null) {
-            if (position > 1) {
+            if (position > 1)
                 return;
-            } else {
-                head = new Node();
-                head.data = data;
-                head.next = null;
-                return;
-            }
-        }
-
-        if (head.next == null) {
-            if (position >= 3)
-                return;
-            else {
-                if (position == 1) {
-                    newNode.data = data;
-                    newNode.next = temp;
-                    head = newNode;
-                    return;
-                }
-                if (position == 2) {
-                    newNode.data = data;
-                    newNode.next = null;
-                    head.next = newNode;
-                    return;
-                }
-            }
+            Node newNode = new Node();
+            newNode.data = data;
+            newNode.next = null;
+            head = newNode;
+            return;
         }
 
         if (position == 1) {
+            Node newNode = new Node();
             newNode.data = data;
             newNode.next = head;
             head = newNode;
             return;
-        } else {
-            Node prevTemp = head;
-            while (prevTemp.next != null) {
-                prevTemp = temp;
-                temp = temp.next;
-                counter += 1;
-                if (position == counter) {
-                    newNode.data = data;
-                    prevTemp.next = newNode;
-                    newNode.next = temp;
-                    return;
-                }
+        }
+
+        int counter = 1;
+        Node temp = head;
+
+        while (temp.next != null) {
+            if (counter == position - 1) {
+                Node newNode = new Node();
+                newNode.data = data;
+                newNode.next = temp.next;
+                temp.next = newNode;
+                return;
             }
+            counter += 1;
+            temp = temp.next;
+        }
+
+        if (counter == position - 1) {
+            Node newNode = new Node();
+            newNode.data = data;
+            newNode.next = temp.next;
+            temp.next = newNode;
+            return;
+        }
+
+        return;
+    }
+
+    public void deleteAtPosition(int position) {
+
+        if (head == null)
+            return;
+
+        if (head.next == null || position == 1) {
+            if (position > 1)
+                return;
+            head = head.next;
+            // head = null;
+            return;
+        }
+
+        Node temp = head.next;
+        int counter = 1;
+        Node prevTemp = head;
+
+        while (temp.next != null) {
+            if (counter == position - 1) {
+                prevTemp.next = temp.next;
+                temp.next = null;
+                return;
+            }
+            prevTemp = prevTemp.next;
+            temp = temp.next;
         }
 
     }
