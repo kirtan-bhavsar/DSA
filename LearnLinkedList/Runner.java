@@ -69,10 +69,93 @@ public class Runner {
         // list.show();
 
         // Test Case 2
+        // list.add(10);
+        // list.show();
+        // list.insertAtPosition(99, 1);
+        // list.show();
+
+        // Test Case 3
+        // list.add(10);
+        // list.show();
+        // list.insertAtPosition(99, 2);
+        // list.show();
+
+        // Custom Test Case
+        // list.add(10);
+        // list.add(20);
+        // list.add(30);
+        // list.add(40);
+        // list.show();
+        // list.insertAtPosition(99, 1);
+        // list.show();
+
+        // Test Case 4
+        // list.add(10);
+        // list.add(20);
+        // list.show();
+        // list.insertAtPosition(99, 2);
+        // list.show();
+
+        // Test Case 5
+        // list.add(10);
+        // list.add(20);
+        // list.show();
+        // list.insertAtPosition(99, 3);
+        // list.show();
+
+        // Test Case 6
+        // list.add(10);
+        // list.add(20);
+        // list.add(30);
+        // list.show();
+        // list.insertAtPosition(99, 2);
+        // list.show();
+
+        // Test Case 7
+        // list.add(10);
+        // list.add(20);
+        // list.add(30);
+        // list.show();
+        // list.insertAtPosition(99, 1);
+        // list.show();
+
+        // Test Case 8
         list.add(10);
+        list.add(20);
+        list.add(30);
         list.show();
-        list.insertAtPosition(99, 1);
+        list.insertAtPosition(99, 4);
         list.show();
+
+        // Test Case 9
+        // list.add(10);
+        // list.add(20);
+        // list.add(30);
+        // list.show();
+        // list.insertAtPosition(99, 5);
+        // list.show();
+
+        // Test Case 10
+        // list.add(10);
+        // list.add(20);
+        // // list.add(30);
+        // list.show();
+        // list.insertAtPosition(99, 3);
+        // list.show();
+
+        // Test Case 11
+        // list.add(10);
+        // list.show();
+        // list.insertAtPosition(99, 2);
+        // list.show();
+
+        // Test Case 12
+        // list.add(10);
+        // list.add(20);
+        // list.add(30);
+        // list.show();
+        // list.insertAtPosition(99, 0);
+        // list.show();
 
     }
 

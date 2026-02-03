@@ -161,7 +161,6 @@ public class LinkedList {
 
         Node temp = head;
         int counter = 1;
-        Node prevTemp = new Node();
         Node newNode = new Node();
 
         if (head == null) {
@@ -169,39 +168,38 @@ public class LinkedList {
                 return;
             } else {
                 head = new Node();
-                // this.head = new Node();
                 head.data = data;
-                // this.head.data = data;
                 head.next = null;
-                // this.head.next = null;
                 return;
             }
         }
-
-        // Node temp = head;
-        // int counter = 1;
-        // Node prevTemp = new Node();
-        // Node newNode = new Node();
 
         if (head.next == null) {
             if (position >= 3)
                 return;
             else {
-                newNode.data = data;
-                System.out.println("Data assigned to new node");
-                newNode.next = position == 1 ? head : null;
-                System.out.println("the next for new node will be head if position is 1 or null if position is 2");
-                head.next = position == 1 ? null : newNode;
-                System.out.println("");
-                return;
+                if (position == 1) {
+                    newNode.data = data;
+                    newNode.next = temp;
+                    head = newNode;
+                    return;
+                }
+                if (position == 2) {
+                    newNode.data = data;
+                    newNode.next = null;
+                    head.next = newNode;
+                    return;
+                }
             }
         }
 
         if (position == 1) {
             newNode.data = data;
             newNode.next = head;
+            head = newNode;
             return;
         } else {
+            Node prevTemp = head;
             while (prevTemp.next != null) {
                 prevTemp = temp;
                 temp = temp.next;
