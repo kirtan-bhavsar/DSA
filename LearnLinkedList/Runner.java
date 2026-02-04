@@ -161,13 +161,61 @@ public class Runner {
         // list.insertAtPosition(10, 1);
         // list.show();
 
+        // list.add(10);
+        // list.add(20);
+        // list.add(30);
+        // list.add(40);
+        // list.add(50);
+        // list.show();
+        // list.deleteAtPosition(5);
+        // list.show();
+
+        // Test Case 1
+        // list.show();
+        // list.deleteAtPosition(1);
+        // list.show();
+
+        // Test case 2
+        // list.add(1);
+        // list.show();
+        // list.deleteAtPosition(1);
+        // list.show();
+
+        // // Test case 3
+        // list.add(1);
+        // list.show();
+        // list.deleteAtPosition(2);
+        // list.show();
+
+        // Test case 4
+        // list.add(1);
+        // list.add(2);
+        // list.show();
+        // list.deleteAtPosition(1);
+        // list.show();
+
+        // // Test case 5
+        // list.add(1);
+        // list.add(2);
+        // list.show();
+        // list.deleteAtPosition(2);
+        // list.show();
+
+        // Test case 6
+        // list.add(1);
+        // list.add(2);
+        // list.add(3);
+        // list.show();
+        // list.deleteAtPosition(2);
+        // list.show();
+
+        // Test Case 7
         list.add(10);
         list.add(20);
         list.add(30);
         list.add(40);
-        list.add(50);
         list.show();
-        list.deleteAtPosition(5);
+        list.deleteAtPosition(4);
         list.show();
 
     }

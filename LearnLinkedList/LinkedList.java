@@ -281,7 +281,7 @@ public class LinkedList {
         int counter = 1;
         Node prevTemp = head;
 
-        while (temp.next != null) {
+        while (prevTemp.next != null) {
             if (counter == position - 1) {
                 prevTemp.next = temp.next;
                 temp.next = null;
@@ -289,6 +289,7 @@ public class LinkedList {
             }
             prevTemp = prevTemp.next;
             temp = temp.next;
+            counter += 1;
         }
 
     }
