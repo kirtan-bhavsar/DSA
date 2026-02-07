@@ -74,15 +74,22 @@ public class DoublyRunner {
         // // doublylist.insertAtPosition(99, 3);
         // doublylist.show();
 
-        // Test Case 4
-        int arr[] = { 1, 2, 3 };
+        // // Test Case 4
+        // int arr[] = { 1, 2, 3 };
+        // doublylist = doublylist.arrayToDoublyLinkedList(arr);
+        // doublylist.show();
+        // // doublylist.insertAtPosition(99, 1);
+        // // doublylist.insertAtPosition(99, 2);
+        // // doublylist.insertAtPosition(99, 3);
+        // // doublylist.insertAtPosition(99, 4);
+        // doublylist.insertAtPosition(99, 5);
+        // doublylist.show();
+
+        // ---delete head test cases---
+        int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
         doublylist = doublylist.arrayToDoublyLinkedList(arr);
         doublylist.show();
-        // doublylist.insertAtPosition(99, 1);
-        // doublylist.insertAtPosition(99, 2);
-        // doublylist.insertAtPosition(99, 3);
-        // doublylist.insertAtPosition(99, 4);
-        doublylist.insertAtPosition(99, 5);
+        doublylist.deleteHead();
         doublylist.show();
 
     }

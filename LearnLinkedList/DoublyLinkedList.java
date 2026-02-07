@@ -102,6 +102,43 @@ public class DoublyLinkedList {
 
     }
 
+    // delete head
+    public void deleteHead() {
+
+        if (head == null)
+            return;
+
+        if (head.nextNode == null) {
+            head = null;
+            return;
+        }
+
+        head = head.nextNode;
+        head.prevNode = null;
+        return;
+
+    }
+
+    // delete tail
+    public void deleteTail() {
+
+        if (head == null)
+            return;
+
+        if (head.nextNode == null) {
+            head = null;
+            return;
+        }
+
+        DoublyNode temp = head;
+        DoublyNode prevTemp = null;
+
+        while (temp.nextNode != null) {
+            temp = temp.nextNode;
+        }
+
+    }
+
     // Convert array to doubly linkedlist
     public DoublyLinkedList arrayToDoublyLinkedList(int arr[]) {
 
