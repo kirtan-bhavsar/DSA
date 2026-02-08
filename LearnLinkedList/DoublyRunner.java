@@ -86,10 +86,31 @@ public class DoublyRunner {
         // doublylist.show();
 
         // ---delete head test cases---
+        // int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
+        // doublylist = doublylist.arrayToDoublyLinkedList(arr);
+        // doublylist.show();
+        // doublylist.deleteHead();
+        // doublylist.show();
+
+        // // --- delete tail test cases ---
+        // int arr[] = { 1, 2, 3, 4 };
+        // doublylist = doublylist.arrayToDoublyLinkedList(arr);
+        // doublylist.show();
+        // doublylist.deleteTail();
+        // doublylist.show();
+
+        // --- delete at position test cases ---
+        // int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+        // doublylist = doublylist.arrayToDoublyLinkedList(arr);
+        // doublylist.show();
+        // doublylist.deleteAtPosition(5);
+        // doublylist.show();
+
+        // --- deleteNode test cases ---
         int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
         doublylist = doublylist.arrayToDoublyLinkedList(arr);
         doublylist.show();
-        doublylist.deleteHead();
+        doublylist.deleteNode(doublylist.head.nextNode.nextNode.nextNode);
         doublylist.show();
 
     }
