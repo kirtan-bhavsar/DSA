@@ -231,6 +231,45 @@ public class DoublyLinkedList {
 
     }
 
+    // insert at(before) a given node
+    public void addAtNode(int data, DoublyNode node) {
+
+        // if passed node is null or head is null then there is nothing to be done
+        if (head == null || node == null) {
+            return;
+        }
+
+        // if there is only one element in the doubly linkedlist
+        if (head.nextNode == null || node == head) {
+            DoublyNode temp = new DoublyNode();
+            temp.data = data;
+            temp.nextNode = head;
+            temp.prevNode = null;
+            head.prevNode = temp;
+            head = temp;
+            return;
+        }
+
+        DoublyNode temp = head;
+
+        while (temp.nextNode != null) {
+            temp = temp.nextNode;
+            if (temp == node) {
+                DoublyNode addNode = new DoublyNode();
+                addNode.data = data;
+                temp.prevNode.nextNode = addNode;
+                if (temp.nextNode != null)
+                    temp.nextNode.prevNode = addNode;
+                addNode.nextNode = temp;
+                addNode.prevNode = temp.prevNode;
+                return;
+            }
+        }
+
+        return;
+
+    }
+
     // Convert array to doubly linkedlist
     public DoublyLinkedList arrayToDoublyLinkedList(int arr[]) {
 
