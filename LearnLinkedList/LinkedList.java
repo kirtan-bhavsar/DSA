@@ -1,7 +1,5 @@
 package LearnLinkedList;
 
-import List.sortingCustomClass;
-
 public class LinkedList {
 
     Node head;

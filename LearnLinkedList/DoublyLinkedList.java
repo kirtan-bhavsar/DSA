@@ -259,7 +259,7 @@ public class DoublyLinkedList {
                 addNode.data = data;
                 temp.prevNode.nextNode = addNode;
                 if (temp.nextNode != null)
-                    stemp.nextNode.prevNode = addNode;
+                    temp.nextNode.prevNode = addNode;
                 addNode.nextNode = temp;
                 addNode.prevNode = temp.prevNode;
                 return;
