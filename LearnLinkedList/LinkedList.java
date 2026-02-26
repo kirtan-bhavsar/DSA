@@ -292,4 +292,16 @@ public class LinkedList {
 
     }
 
+    public LinkedList arrayToLinkedlist(int arr[]) {
+
+        LinkedList linkedList = new LinkedList();
+
+        for (int i = 0; i < arr.length; i++) {
+            linkedList.add(arr[i]);
+        }
+
+        return linkedList;
+
+    }
+
 }

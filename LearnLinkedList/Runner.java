@@ -210,12 +210,16 @@ public class Runner {
         // list.show();
 
         // Test Case 7
-        list.add(10);
-        list.add(20);
-        list.add(30);
-        list.add(40);
-        list.show();
-        list.deleteAtPosition(4);
+        // list.add(10);
+        // list.add(20);
+        // list.add(30);
+        // list.add(40);
+        // list.show();
+        // list.deleteAtPosition(4);
+        // list.show();
+
+        int arr[] = { 1, 2, 3, 4, 5, 6 };
+        list = list.arrayToLinkedlist(arr);
         list.show();
 
     }

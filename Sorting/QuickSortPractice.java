@@ -10,7 +10,8 @@ public class QuickSortPractice {
         // int arr[] = { 1, 2, 3 };
         // int arr[] = { 3, 2, 1 };
         // int arr[] = { 9, 8, 15, 6, 2, 78, 36, 1, 58 };
-        int arr[] = { 1, 2, 3, 1, 9, 7, 1, 2, 1 };
+        // int arr[] = { 1, 2, 3, 1, 9, 7, 1, 2, 1 };
+        int arr[] = { 9, 8, 7, 6, 5, 4, 3, 2, 1 };
         // int arr[] = { 3,2,1 };
 
         arr = quickSort(arr, 0, arr.length - 1);
@@ -22,7 +23,7 @@ public class QuickSortPractice {
 
     public static int[] quickSort(int arr[], int low, int high) {
 
-        if (low == high || low < 0 || low > arr.length || high < 0 || high > arr.length - 1 || high < low)
+        if (low == high || high < low)
             return arr;
 
         int pivot = low;
