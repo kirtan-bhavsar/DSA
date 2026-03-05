@@ -4,8 +4,8 @@ public class AddTwoNumber {
 
     public static void main(String args[]) {
 
-        int arr1[] = { 4, 4, 4, 4 };
-        int arr2[] = { 5, 5, 5, 6 };
+        int arr1[] = { 9, 9 };
+        int arr2[] = { 1, 1, 2, 7 };
 
         LinkedList list1 = new LinkedList();
         LinkedList list2 = new LinkedList();
@@ -42,6 +42,13 @@ public class AddTwoNumber {
         // System.out.println("list2Counter = " + list2Counter);
 
         list3.head = addTwoNumbers(list1.head, list2.head, list1Counter, list2Counter);
+        if (list3.head.data > 9) {
+            Node newNode = new Node();
+            newNode.data = 1;
+            list3.head.data = list3.head.data % 10;
+            newNode.next = list3.head;
+            list3.head = newNode;
+        }
         list3.show();
     }
 
@@ -52,9 +59,9 @@ public class AddTwoNumber {
         if (head2 == null)
             return head1;
         Node temp1 = null;
-        System.out.println("temp1" + temp1);
+        // System.out.println("temp1" + temp1);
         Node temp2 = null;
-        System.out.println("temp2" + temp2);
+        // System.out.println("temp2" + temp2);
 
         if (head1.next == null && head2.next == null) {
             Node temp = new Node();
@@ -77,7 +84,7 @@ public class AddTwoNumber {
         // : "temp2 is not null it's value is : " + temp2.data);
 
         // System.out.println("before calling function another time");
-        // System.out.println("Head 1 is : " + head1.data);
+        // System.out.println("Head t1 is : " + head1.data);
         // System.out.println("Head 2 is : " + head2.data);
         Node temp = addTwoNumbers(head1, head2, temp2 == null ? --list1Counter : 0, temp1 == null ? --list2Counter : 0);
         int temp1Data = temp1 != null ? temp1.data : 0;
@@ -87,18 +94,27 @@ public class AddTwoNumber {
         // System.out.println("sum is : " + current.data);
         current.next = temp;
         temp.data = temp.data % 10;
-        System.out.println("list1Counter is : " + list1Counter);
-        System.out.println("list2Counter is : " + list2Counter);
-        if ((list1Counter != 0 && temp1 == head1) || (list2Counter != 0 && temp2 == head2)) {
-            System.out.println("new head will be created");
-            if (current.data > 9) {
-                Node newHead = new Node();
-                newHead.data = 1;
-                newHead.next = current;
-                current.data = current.data % 10;
-                return newHead;
-            }
-        }
+        // System.out.println("list1Counter is : " + list1Counter);
+        // System.out.println("list2Counter is : " + list2Counter);
+
+        // if (temp1 == head1)
+        // System.out.println("temp1 is head1");
+        // if (temp2 == head2)
+        // System.out.println("temp2 is head2");
+        // if (current.data > 9)
+        // System.out.println("current.data is > 9 which is : " + current.data);
+        // if ((list1Counter != 0 && temp1 == head1 && current.data > 9)
+        // || (list2Counter != 0 && temp2 == head2 && current.data > 9)
+        // || (temp1 == head1 && temp2 == head2 && current.data > 9)) {
+        // // System.out.println("new head will be created");
+        // if (current.data > 9) {
+        // Node newHead = new Node();
+        // newHead.data = 1;
+        // newHead.next = current;
+        // current.data = current.data % 10;
+        // return newHead;
+        // }
+        // }
         return current;
 
     }
