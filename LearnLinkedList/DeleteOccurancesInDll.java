@@ -52,7 +52,6 @@ public class DeleteOccurancesInDll {
             }
         }
 
-        // return list.head;
         list.show();
 
     }
