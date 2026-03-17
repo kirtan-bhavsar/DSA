@@ -3,7 +3,7 @@ package Strings;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AnagramRev {
+public class IsomorphicString {
 
     class Solution {
         public boolean isIsomorphic(String s, String t) {

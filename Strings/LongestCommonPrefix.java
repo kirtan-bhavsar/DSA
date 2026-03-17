@@ -1,37 +1,37 @@
 package Strings;
 
-public class LongestCommonPrefix {
-
 import java.util.Arrays;
 
-class Solution {
-    public String longestCommonPrefix(String[] strs) {
+public class LongestCommonPrefix {
 
-        Arrays.sort(strs);
+    class Solution {
+        public String longestCommonPrefix(String[] strs) {
 
-        String string1 = strs[0];
-        String string2 = strs[strs.length - 1];
+            Arrays.sort(strs);
 
-        int length1 = string1.length();
-        int length2 = string2.length();
+            String string1 = strs[0];
+            String string2 = strs[strs.length - 1];
 
-        int shortLength = Math.min(length1, length2);
+            int length1 = string1.length();
+            int length2 = string2.length();
 
-        StringBuilder sbr = new StringBuilder();
+            int shortLength = Math.min(length1, length2);
 
-        for (int i = 0; i < shortLength; i++) {
+            StringBuilder sbr = new StringBuilder();
 
-            if (string1.charAt(i) == string2.charAt(i))
-                sbr.append(string1.charAt(i));
+            for (int i = 0; i < shortLength; i++) {
 
-            else
-                return sbr.toString();
+                if (string1.charAt(i) == string2.charAt(i))
+                    sbr.append(string1.charAt(i));
+
+                else
+                    return sbr.toString();
+
+            }
+
+            return sbr.toString();
 
         }
-
-        return sbr.toString();
-
     }
-}
 
 }
